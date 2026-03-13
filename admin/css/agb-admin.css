@@ -1,0 +1,308 @@
+/**
+ * Admin styles for Auto Generate Blog by ideaBoss.
+ */
+
+/* -------------------------------------------------------------------------
+ * Container
+ * ---------------------------------------------------------------------- */
+
+#agb-container {
+	padding: 2px 0 6px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, sans-serif;
+}
+
+/* -------------------------------------------------------------------------
+ * Category row
+ * ---------------------------------------------------------------------- */
+
+.agb-row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 14px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.agb-label {
+	font-size: 13px;
+	font-weight: 500;
+	color: #3c434a;
+	white-space: nowrap;
+	min-width: 80px;
+}
+
+.agb-select {
+	flex: 1;
+	font-size: 13px;
+	padding: 5px 8px;
+	border: 1px solid #c3c4c7;
+	border-radius: 3px;
+	height: 32px;
+	color: #1d2327;
+	background: #fff;
+	max-width: 320px;
+}
+
+.agb-select:focus {
+	border-color: #2271b1;
+	outline: 2px solid transparent;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* -------------------------------------------------------------------------
+ * Tabs
+ * ---------------------------------------------------------------------- */
+
+.agb-tabs {
+	display: flex;
+	gap: 0;
+	border-bottom: 2px solid #e0e0e0;
+	margin-bottom: 14px;
+}
+
+.agb-tab {
+	background: #f6f7f7;
+	border: 1px solid #ddd;
+	border-bottom: none;
+	padding: 7px 18px;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 500;
+	color: #555;
+	line-height: 1.4;
+	transition: background 0.15s, color 0.15s;
+	margin-bottom: -2px;
+	border-radius: 3px 3px 0 0;
+}
+
+.agb-tab:hover {
+	background: #fff;
+	color: #1d2327;
+}
+
+.agb-tab.agb-tab-active {
+	background: #fff;
+	color: #2271b1;
+	border-color: #ddd #ddd #fff;
+	border-bottom: 2px solid #fff;
+}
+
+/* -------------------------------------------------------------------------
+ * Tab content panels
+ * ---------------------------------------------------------------------- */
+
+.agb-tab-content {
+	display: none;
+}
+
+.agb-tab-content.agb-tab-content-active {
+	display: block;
+}
+
+/* -------------------------------------------------------------------------
+ * AI Generate field groups (Website / Topic / Overview)
+ * ---------------------------------------------------------------------- */
+
+.agb-field-group {
+	margin-bottom: 12px;
+}
+
+.agb-field-label {
+	display: block;
+	font-size: 12px;
+	font-weight: 600;
+	color: #3c434a;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	margin-bottom: 5px;
+}
+
+.agb-field-group input[type="text"],
+.agb-field-group input[type="url"] {
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 13px;
+	padding: 7px 10px;
+	border: 1px solid #c3c4c7;
+	border-radius: 3px;
+	height: 34px;
+	color: #1d2327;
+	background: #fff;
+	font-family: inherit;
+	transition: border-color 0.1s;
+}
+
+.agb-field-group input[type="text"]:focus,
+.agb-field-group input[type="url"]:focus {
+	border-color: #2271b1;
+	outline: 2px solid transparent;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+.agb-field-group textarea {
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 13px;
+	padding: 7px 10px;
+	border: 1px solid #c3c4c7;
+	border-radius: 3px;
+	color: #1d2327;
+	background: #fff;
+	font-family: inherit;
+	resize: vertical;
+	transition: border-color 0.1s;
+	line-height: 1.5;
+}
+
+.agb-field-group textarea:focus {
+	border-color: #2271b1;
+	outline: 2px solid transparent;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* -------------------------------------------------------------------------
+ * Description text
+ * ---------------------------------------------------------------------- */
+
+.agb-description {
+	color: #666;
+	font-size: 13px;
+	margin: 0 0 10px;
+	line-height: 1.5;
+}
+
+/* -------------------------------------------------------------------------
+ * Inputs
+ * ---------------------------------------------------------------------- */
+
+#agb-prompt {
+	width: 100%;
+	box-sizing: border-box;
+	resize: vertical;
+	font-size: 13px;
+	line-height: 1.5;
+	padding: 8px 10px;
+	border: 1px solid #c3c4c7;
+	border-radius: 3px;
+	color: #1d2327;
+	background: #fff;
+	transition: border-color 0.1s;
+	font-family: inherit;
+}
+
+#agb-prompt:focus {
+	border-color: #2271b1;
+	outline: 2px solid transparent;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+#agb-url {
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 13px;
+	padding: 8px 10px;
+	border: 1px solid #c3c4c7;
+	border-radius: 3px;
+	height: 36px;
+	color: #1d2327;
+	background: #fff;
+	transition: border-color 0.1s;
+	font-family: inherit;
+}
+
+#agb-url:focus {
+	border-color: #2271b1;
+	outline: 2px solid transparent;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* -------------------------------------------------------------------------
+ * Action row
+ * ---------------------------------------------------------------------- */
+
+.agb-actions {
+	margin-top: 10px;
+	padding-bottom: 2px;
+}
+
+.agb-btn {
+	font-size: 13px !important;
+	padding: 5px 16px !important;
+	height: auto !important;
+	line-height: 1.6 !important;
+}
+
+.agb-btn.agb-btn-loading {
+	opacity: 0.65;
+	cursor: wait !important;
+	pointer-events: none;
+}
+
+/* -------------------------------------------------------------------------
+ * Progress / loading indicator
+ * ---------------------------------------------------------------------- */
+
+#agb-status {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 0 4px;
+	color: #555;
+	font-size: 13px;
+}
+
+.agb-spinner {
+	width: 18px;
+	height: 18px;
+	border: 2px solid #dcdcde;
+	border-top-color: #2271b1;
+	border-radius: 50%;
+	animation: agb-spin 0.75s linear infinite;
+	flex-shrink: 0;
+}
+
+@keyframes agb-spin {
+	to { transform: rotate(360deg); }
+}
+
+/* -------------------------------------------------------------------------
+ * Notice messages
+ * ---------------------------------------------------------------------- */
+
+.agb-notice {
+	padding: 10px 14px;
+	border-left: 4px solid #c3c4c7;
+	background: #f9f9f9;
+	margin: 12px 0 4px;
+	font-size: 13px;
+	line-height: 1.5;
+	border-radius: 0 3px 3px 0;
+}
+
+.agb-notice a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.agb-notice a:hover {
+	opacity: 0.8;
+}
+
+.agb-notice-warning {
+	border-left-color: #f0a500;
+	background: #fffbe5;
+	color: #7a5800;
+}
+
+.agb-notice-error {
+	border-left-color: #d63638;
+	background: #fff0f0;
+	color: #8c1a1c;
+}
+
+.agb-notice-success {
+	border-left-color: #00a32a;
+	background: #f0fff4;
+	color: #1a5c2a;
+}
