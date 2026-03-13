@@ -4,7 +4,7 @@ Tags:               blog, ai, automation, claude, content, writing, import
 Requires at least:  5.6
 Tested up to:       6.5
 Requires PHP:       7.4
-Stable tag:         1.0.4
+Stable tag:         1.0.5
 License:            GPLv2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,6 +54,9 @@ Sites that require login, use heavy JavaScript rendering (SPAs), or actively blo
 No. The plugin always instructs Claude to write an original intro/summary in its own words. The article body is reformatted and properly attributed to the source.
 
 == Changelog ==
+
+= 1.0.5 =
+* Fixed: cURL error 61 — removed the Accept-Encoding: br header that caused Brotli-compressed responses to fail (libcurl only supports gzip/deflate without extra PHP extensions)
 
 = 1.0.4 =
 * Fixed: URL import now uses a tag-delimited response format (<agb_content>) that completely prevents JSON parsing failures caused by HTML attribute quotes inside article content

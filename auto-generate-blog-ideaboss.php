@@ -3,7 +3,7 @@
  * Plugin Name: Auto Generate Blog by ideaBoss
  * Plugin URI:  https://ideaboss.io
  * Description: Automate blog post creation using Claude AI. Generate posts from prompts or import and format articles from URLs — with SEO, attribution, and Yoast integration built in.
- * Version:     1.0.4
+ * Version:     1.0.5
  * Author:      ideaBoss
  * Author URI:  https://ideaboss.io
  * License:     GPL v2 or later
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AGB_VERSION',         '1.0.4' );
+define( 'AGB_VERSION',         '1.0.5' );
 define( 'AGB_PLUGIN_DIR',      plugin_dir_path( __FILE__ ) );
 define( 'AGB_PLUGIN_URL',      plugin_dir_url( __FILE__ ) );
 define( 'AGB_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
